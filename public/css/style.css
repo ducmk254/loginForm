@@ -106,5 +106,10 @@ body {
   text-decoration: none;
   color: #9225a7;
 }
+.container .arlet-font {
+  font-size: 1.6rem;
+  background-color: #f3bcbc;
+  color: #333;
+}
 
 /*# sourceMappingURL=style.css.map */

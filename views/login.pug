@@ -1,0 +1,14 @@
+extends ../layouts/header.pug
+block content
+    .container
+        form.container__form(action='/login' method='POST')
+            label.container__title(for='username') Login Form
+            if errors 
+                each err in errors
+                    .arlet.arlet-danger.arlet-font= err
+            input.container__username(type='text', placeholder='Email or Username', name='username')
+            input.container__password(type='password', placeholder='Password',name='password')
+            .container__row
+                button.container__btn Sign in
+                span.container__forgot
+                    a.container__link(href='#') Forgot Password?
