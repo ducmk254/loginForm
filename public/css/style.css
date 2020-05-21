@@ -1,0 +1,110 @@
+html {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9225a7;
+}
+
+.container {
+  width: 100%;
+  max-width: 430px;
+  margin: 130px auto;
+}
+.container__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.container__title {
+  width: 100%;
+  background-color: #5c1769;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+  padding: 32px 30px;
+  border: 1px solid #5c1769;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.container input {
+  width: 85%;
+  padding: 20px 15px;
+  font-size: 1.8rem;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.container input::placeholder {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.container input[type=text] {
+  margin: 50px 0 20px 0;
+}
+.container input[type=password] {
+  margin-bottom: 50px;
+}
+.container__row {
+  width: 85%;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container__btn {
+  justify-self: flex-start;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 500;
+  background-color: #5c1769;
+  padding: 14px 36px;
+  border: 1px solid #5c1769;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.container__btn:hover {
+  background-color: #460c52;
+  border: 1px solid #460c52;
+}
+.container__forgot {
+  margin-left: 26px;
+  font-size: 1.8rem;
+}
+.container__link {
+  text-decoration: none;
+  color: #9225a7;
+}
+
+/*# sourceMappingURL=style.css.map */
