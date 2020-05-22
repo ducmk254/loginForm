@@ -7,10 +7,11 @@ module.exports.requireLogin =(req,res,next)=>{
         return;
     }
     //  nếu tồn tại rồi thì làm gì check xem userId = user.id ?
-    let user = db.get('users').find({id:req.cookie.userId}).value();
+    let user = db.get('users').find({id: req.cookies.userId}).value();
     if(!user){
         res.redirect('/login');
         return;
     }
+
     next();
 };
