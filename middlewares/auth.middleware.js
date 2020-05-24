@@ -12,6 +12,7 @@ module.exports.requireLogin =(req,res,next)=>{
         res.redirect('/login');
         return;
     }
-
+    console.log(user);
+    res.locals.user = user;
     next();
 };

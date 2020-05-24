@@ -28,10 +28,10 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(cookieParser());
 
-app.use('/',homeRouter);
+
 app.use('/home',requireLogin.requireLogin,homeRouter);
 app.use('/login',authRouter);
-
+ 
 
 
 

@@ -16,6 +16,7 @@ module.exports.postAuth = (req,res)=>{
         res.render('login',{errors:['Password does not match']});
         return;
     }
+
     res.cookie('userId',user.id); // khi đúng username và pasword thì set cookie : userId = user.id luôn
-    res.redirect('/home');
+    res.redirect('/home'); 
 };

@@ -1,6 +1,4 @@
-module.exports.index= (req,res)=>{
+
+module.exports.renderHome= (req,res)=>{
     res.render('home');
 };
-module.exports.reDirect=(req,res)=>{
-    res.redirect('/home');
-}
